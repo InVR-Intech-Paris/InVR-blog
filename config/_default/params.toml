@@ -25,35 +25,35 @@ defaultAppearance               =   "dark"          # * ... [OK]
 #-------------------
 # * ... SEO
 #-------------------
-# robots                          =   "all"           # * ... [OK] - TeamRem: DON'T EDIT THAT OR I WILL KILL YOU (SEO).
-# article.showTableOfContents     =   true            # * ... [OK] - TeamRem: DON'T EDIT THAT OR I WILL KILL YOU (SEO).
-# article.showAuthorsBadges       =   true            # * ... [OK] - TeamRem: DON'T EDIT THAT OR I WILL KILL YOU (SEO).
-# article.showDateUpdated         =   true            # * ... [OK] - TeamRem: DON'T EDIT THAT OR I WILL KILL YOU (SEO Attempt).
-# article.showTaxonomies          =   true            # * ... [OK] - TeamRem: DON'T EDIT THAT OR I WILL KILL YOU (SEO Attempt).
+robots                          =   "all"           # * ... [OK] - TeamRem: DON'T EDIT THAT OR I WILL KILL YOU (SEO).
+article.showTableOfContents     =   true            # * ... [OK] - TeamRem: DON'T EDIT THAT OR I WILL KILL YOU (SEO).
+article.showAuthorsBadges       =   true            # * ... [OK] - TeamRem: DON'T EDIT THAT OR I WILL KILL YOU (SEO).
+article.showDateUpdated         =   true            # * ... [OK] - TeamRem: DON'T EDIT THAT OR I WILL KILL YOU (SEO Attempt).
+article.showTaxonomies          =   true            # * ... [OK] - TeamRem: DON'T EDIT THAT OR I WILL KILL YOU (SEO Attempt).
 
 #-------------------
 # * ... Behaviours
 #-------------------
-# autoSwitchAppearance            =   false           # * ... [OK] - Expected behaviour: forces the theme to be dark on First-Time Visit.
-# header.layout                   =   "hamburger"     # * ... [OK] - TeamRem: you can edit this as you prefer.
-# footer.showCopyright            =   false           # * ... [OK] - TeamRem: you can edit this as you prefer.
-# footer.showThemeAttribution     =   false           # * ... [OK] - TeamRem: you can edit this as you prefer.
+autoSwitchAppearance            =   false           # * ... [OK] - Expected behaviour: forces the theme to be dark on First-Time Visit.
+header.layout                   =   "hamburger"     # * ... [OK] - TeamRem: you can edit this as you prefer.
+footer.showCopyright            =   false           # * ... [OK] - TeamRem: you can edit this as you prefer.
+footer.showThemeAttribution     =   false           # * ... [OK] - TeamRem: you can edit this as you prefer.
 
 #-------------------
 # * ... Features
 #-------------------
-# enableCodeCopy                  =   true            # * ... [OK] - TeamRem: offers a "Copy" btn on your code snippets.
-# enableSearch                    =   true            # * ... [OK] - TeamRem: KEEP THE THREE OUTPUTS WAYS ENABLED (HTML/RSS/JSON) OR YOU WILL INTRODUCE BREAKING CHANGES. I ALSO NEED THEM FOR HTTP REQUESTS INTERCEPTIONS & RSS SNIFFERS IN MY MONITORING TOOLS.
-# article.showLikes               =   true            # * ... [OK] - TeamRem: DON'T EDIT THAT OR I WILL KILL YOU (SEO Attempt).
-# article.showViews               =   true            # * ... [OK] - TeamRem: DON'T EDIT THAT OR I WILL KILL YOU (SEO Attempt).
-# article.showBreadcrumbs         =   true            # * ... [OK] - TeamRem: DON'T EDIT THAT OR I WILL KILL YOU (UX: "Fil d'ariane").
-# homepage.showRecent             =   true            # * ... [OK] - TeamRem: you can edit this as you prefer.
+enableCodeCopy                  =   true            # * ... [OK] - TeamRem: offers a "Copy" btn on your code snippets.
+enableSearch                    =   true            # * ... [OK] - TeamRem: KEEP THE THREE OUTPUTS WAYS ENABLED (HTML/RSS/JSON) OR YOU WILL INTRODUCE BREAKING CHANGES. I ALSO NEED THEM FOR HTTP REQUESTS INTERCEPTIONS & RSS SNIFFERS IN MY MONITORING TOOLS.
+article.showLikes               =   true            # * ... [OK] - TeamRem: DON'T EDIT THAT OR I WILL KILL YOU (SEO Attempt).
+article.showViews               =   true            # * ... [OK] - TeamRem: DON'T EDIT THAT OR I WILL KILL YOU (SEO Attempt).
+article.showBreadcrumbs         =   true            # * ... [OK] - TeamRem: DON'T EDIT THAT OR I WILL KILL YOU (UX: "Fil d'ariane").
+homepage.showRecent             =   true            # * ... [OK] - TeamRem: you can edit this as you prefer.
 
 #-------------------
 # * ... AREA 51
 #-------------------
-# article.showEdit                =   false           # * ... [OK] - TeamRem: DON'T EDIT THAT OR I WILL KILL YOU (I prefer Determinism exploits/Gobuster attacks rather than crawlers with requirements set respectfully).
-# homepage.showMoreLinkDest       =   '/posts'        # * ... [OK] - TeamRem: DON'T EDIT THAT OR I WILL KILL YOU (BREAKING CHANGES IF THE PERMALINKS ARE NOT SET RESPECTFULLY + PROBS' WILL FUCK UP SEO FOR WEEKS IF YOU DON'T 301 ON THE HORRIBLE DOMAIN NAME REGISTRAR DASHBOARD, RESPECTFULLY TOO).
+article.showEdit                =   false           # * ... [OK] - TeamRem: DON'T EDIT THAT OR I WILL KILL YOU (I prefer Determinism exploits/Gobuster attacks rather than crawlers with requirements set respectfully).
+homepage.showMoreLinkDest       =   '/posts'        # * ... [OK] - TeamRem: DON'T EDIT THAT OR I WILL KILL YOU (BREAKING CHANGES IF THE PERMALINKS ARE NOT SET RESPECTFULLY + PROBS' WILL FUCK UP SEO FOR WEEKS IF YOU DON'T 301 ON THE HORRIBLE DOMAIN NAME REGISTRAR DASHBOARD, RESPECTFULLY TOO).
 
 # * ... ~ End of CUSTOM
 
