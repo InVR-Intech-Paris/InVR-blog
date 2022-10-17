@@ -3,10 +3,11 @@
 title = "InVR - InTech Paris"                                               # * ... [OK]
 
 [author]
-name = ""                                                                   # * ... ToDo
-image = ""                                                                  # * ... ToDo
+name = "InVR"
+image = "img/in-vr-logo.png"
 headline = "Infinitely creative solutions"
 bio = "Collectif entièrement dédié à l'univers de la Réalité Virtuelle, InVR vous propose les meilleures informations et expériences qu'a à offrir le Métaverse."
 links = [
-  { twitter = "https://twitter.com/InVR_Paris" }
+  { twitter = "https://twitter.com/InVR_Paris" },
+  { github = "https://github.com/InVR-InTech-Paris" }
 ]                                                                           # * ... ToDo
