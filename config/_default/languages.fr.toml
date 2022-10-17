@@ -5,8 +5,8 @@ title = "InVR - InTech Paris"                                               # * 
 [author]
 name = ""                                                                   # * ... ToDo
 image = ""                                                                  # * ... ToDo
-headline = "In'VR c'est pas n'importe quoi"                                 # * ... ToDo
-bio = "Ça fout l'feu, fait fondre, ça t'handicape quand tu l'as pas"        # * ... ToDo
+headline = "Infinitely creative solutions"
+bio = "Collectif entièrement dédié à l'univers de la Réalité Virtuelle, InVR vous propose les meilleures informations et expériences qu'a à offrir le Métaverse."
 links = [
-  { twitter = "https://twitter.com/intechinfo" }
+  { twitter = "https://twitter.com/InVR_Paris" }
 ]                                                                           # * ... ToDo
