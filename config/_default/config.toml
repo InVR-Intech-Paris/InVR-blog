@@ -1,0 +1,6 @@
+# config/_default/config.toml
+
+baseURL = "https://invr.fr/"        # * ... [OK]
+languageCode = "fr"                 # * ... [OK]
+defaultContentLanguage = "fr"       # * ... [OK]
+author = "authors"                  # * ... [OK] - But should be moved in ./taxonomies.toml => https://github.com/nunocoracao/blowfish/issues/126

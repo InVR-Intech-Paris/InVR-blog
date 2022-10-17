@@ -1,0 +1,21 @@
+# config/_default/menus.fr.toml
+
+[[main]]
+  name = "Blog"
+  pageRef = "posts"
+  weight = 10
+
+[[main]]
+  name = "Topics"
+  pageRef = "topics"
+  weight = 20
+
+[[main]]
+  pre = "github"
+  name = "GitHub"
+  url = "https://github.com/"       # * ... ToDo
+  weight = 30
+
+[[footer]]
+  name = "Vie privée"
+  url = "#privacy"                  # * ... ToDo

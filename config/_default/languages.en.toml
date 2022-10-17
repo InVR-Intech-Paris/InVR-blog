@@ -1,0 +1,12 @@
+# config/_default/languages.en.toml
+
+title = "InVR - InTech Paris"                                               # * ... [OK]
+
+[author]
+name = ""                                                                   # * ... ToDo
+image = ""                                                                  # * ... ToDo
+headline = "In'VR is not n'importe quoi"                                    # * ... ToDo
+bio = "Ça fout l'feu, fait fondre, ça t'handicape when you're lacking it"   # * ... ToDo
+links = [
+  { twitter = "https://twitter.com/intechinfo" }
+]                                                                           # * ... ToDo

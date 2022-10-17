@@ -1,0 +1,4 @@
+# config/_default/module.toml
+
+[[imports]]
+path = "github.com/nunocoracao/blowfish"    # * ... [OK] - TeamRem: DON'T EDIT THAT OR I WILL KILL YOU (HUGO THEME)

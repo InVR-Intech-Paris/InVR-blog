@@ -1,0 +1,16 @@
+# config/_default/taxonomies.toml
+#=============================================================================================================================================
+# * ... DOCUMENTATION
+#---------------------------------------------------------------------------------------------------------------------------------------------
+# TAXONOMIES            => https://gohugo.io/content-management/taxonomies/#default-taxonomies
+# ARCHIVE               => https://web.archive.org/web/20221003155835/https://gohugo.io/content-management/taxonomies/#default-taxonomies
+#---------------------------------------------------------------------------------------------------------------------------------------------
+# MULTIPLE AUTHORS      => https://nunocoracao.github.io/blowfish/docs/multi-author/
+# ARCHIVE               => https://web.archive.org/web/20221016155545/https://nunocoracao.github.io/blowfish/docs/multi-author/
+#---------------------------------------------------------------------------------------------------------------------------------------------
+# * ... TeamRem: DON'T EDIT THAT OR I WILL KILL YOU (DEFAULT TAXONOMY, CHANGING IT === INTRODUCING BREAKING CHANGES)
+#=============================================================================================================================================
+
+category = "categories"
+tag = "tags"
+# author = "authors"
