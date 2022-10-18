@@ -1,6 +1,6 @@
 # config/_default/languages.fr.toml
 
-title = "InVR - InTech Paris"                                               # * ... [OK]
+title = "InVR - Intech Paris"                                               # * ... [OK]
 
 [author]
 name = "InVR"
@@ -9,5 +9,5 @@ headline = "Infinitely creative solutions"
 bio = "Collectif entièrement dédié à l'univers de la Réalité Virtuelle, InVR vous propose les meilleures informations et expériences qu'a à offrir le Métaverse."
 links = [
   { twitter = "https://twitter.com/InVR_Paris" },
-  { github = "https://github.com/InVR-InTech-Paris" }
+  { github = "https://github.com/InVR-Intech-Paris" }
 ]                                                                           # * ... ToDo
