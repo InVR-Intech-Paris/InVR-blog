@@ -9,5 +9,6 @@ headline = "Infinitely creative solutions"
 bio = "Collectif entièrement dédié à l'univers de la Réalité Virtuelle, InVR vous propose les meilleures informations et expériences qu'a à offrir le Métaverse."
 links = [
   { twitter = "https://twitter.com/InVR_Paris" },
+  { instagram = "https://www.instagram.com/invr_paris/" },
   { github = "https://github.com/InVR-Intech-Paris" }
 ]                                                                           # * ... ToDo
