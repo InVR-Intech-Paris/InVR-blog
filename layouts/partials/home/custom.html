@@ -396,22 +396,21 @@
   }
 
   #tilt-target {
-    width: 500px;
-    height: 400px;
-  }
-
-  #tilt-target * {
-    max-width: 70%;
-    margin: 0 auto;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
   }
 
   #tilt-here img {
-    margin-top: -10%;
+    margin: 0 auto;
+    max-width: 70%;
+    transform: translate(0, -10%);
     width: 100%;
     height: 100%;
     transition-duration: 1s;
     transition-delay: 0.05s; /* Delay for hardware acceleration considerations */
-    margin-bottom: -10%;
+    margin-bottom: -5%;
     object-fit: contain;
     filter: drop-shadow(0 0 0.75rem rgba(1, 0, 21, 0.6));
   }
@@ -428,9 +427,8 @@
   }
 
   #tilt-here:hover h1 {
-    transform: translateZ(125px);
+    transform: translateZ(145px);
     filter: drop-shadow(5px 3px 2px rgba(0, 11, 24, 0.15));
-    margin-top: -20%;
     opacity: 100%;
   }
 
@@ -443,7 +441,6 @@
   #tilt-here:hover h2 {
     transform: translateZ(175px);
     filter: drop-shadow(5px 3px 2px rgba(0, 11, 24, 0.15));
-    margin-top: -8%;
     opacity: 100%;
   }
 
@@ -455,60 +452,60 @@
 
   #tilt-here:hover #home-hero-social-medias {
     transform: translateZ(175px);
-    margin-top: 3%;
     opacity: 100%;
   }
 </style>
 
-<div>
-  <article class="max-w-full prose dark:prose-invert" id="tilt-trigger">
-    <div class="relative">
-      <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"></div>
-      <div class="mx-auto max-w-7xl p-0">
-        <div class="relative sm:overflow-hidden rounded-2xl">
-          <div
-            class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8 flex flex-col items-center"
-            id="tilt-here"
-          >
-            {{ with .Site.Params.homepage.homepageImage }} {{ $homepageImage :=
-            resources.Get . }} {{ if $homepageImage }}
-            <div id="tilt-target">
-              <img src="{{ $homepageImage.RelPermalink }}" alt="logo-in-vr" />
-            </div>
-            {{ end }} {{ end }}
-            <h1 class="mb-2 text-4xl font-extrabold text-neutral-200">
-              {{ .Site.Author.name | default .Site.Title }}
-            </h1>
-            {{ with .Site.Author.headline }}
-            <h2 class="mt-0 mb-0 text-xl text-neutral-300">
-              {{ . | markdownify | emojify }}
-            </h2>
-            {{ end }}
-            <div class="mt-1 mb-10 text-2xl" id="home-hero-social-medias">
-              {{ with .Site.Author.links }}
-              <div class="flex flex-wrap">
-                {{ range $links := . }} {{ range $name, $url := $links }}
-                <a
-                  class="px-1 hover:text-primary-400 text-primary-300"
-                  href="{{ $url }}"
-                  target="_blank"
-                  aria-label="{{ $name | title }}"
-                  rel="me noopener noreferrer"
-                  >{{ partial "icon.html" $name }}</a
-                >
-                {{ end }} {{ end }}
-              </div>
-              {{ end }}
-            </div>
-            <section class="prose text-neutral-200">
-              {{ .Content | emojify }}
-            </section>
+<article class="max-w-full prose dark:prose-invert" id="tilt-trigger">
+  <div class="relative">
+    <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"></div>
+    <div class="mx-auto max-w-7xl p-0">
+      <div
+        class="relative sm:overflow-hidden rounded-2xl"
+        style="min-height: 900px"
+      >
+        <div
+          class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8 flex flex-col items-center"
+          id="tilt-here"
+        >
+          {{ with .Site.Params.homepage.homepageImage }} {{ $homepageImage :=
+          resources.Get . }} {{ if $homepageImage }}
+          <div id="tilt-target">
+            <img src="{{ $homepageImage.RelPermalink }}" alt="logo-in-vr" />
           </div>
+          {{ end }} {{ end }}
+          <h1 class="mb-2 text-4xl font-extrabold text-neutral-200">
+            {{ .Site.Author.name | default .Site.Title }}
+          </h1>
+          {{ with .Site.Author.headline }}
+          <h2 class="mt-0 mb-0 text-xl text-neutral-300">
+            {{ . | markdownify | emojify }}
+          </h2>
+          {{ end }}
+          <div class="mt-1 mb-10 text-2xl" id="home-hero-social-medias">
+            {{ with .Site.Author.links }}
+            <div class="flex flex-wrap">
+              {{ range $links := . }} {{ range $name, $url := $links }}
+              <a
+                class="px-1 hover:text-primary-400 text-primary-300"
+                href="{{ $url }}"
+                target="_blank"
+                aria-label="{{ $name | title }}"
+                rel="me noopener noreferrer"
+                >{{ partial "icon.html" $name }}</a
+              >
+              {{ end }} {{ end }}
+            </div>
+            {{ end }}
+          </div>
+          <section class="prose text-neutral-200">
+            {{ .Content | emojify }}
+          </section>
         </div>
       </div>
     </div>
-  </article>
-</div>
+  </div>
+</article>
 <section>{{ partial "recent-articles.html" . }}</section>
 
 <script type="text/javascript">
