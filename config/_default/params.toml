@@ -54,7 +54,8 @@ homepage.showRecent             =   true            # * ... [OK] - TeamRem: you 
 #-------------------
 article.showEdit                =   false           # * ... [OK] - TeamRem: DON'T EDIT THAT OR I WILL KILL YOU (I prefer Determinism exploits/Gobuster attacks rather than crawlers with requirements set respectfully).
 homepage.showMoreLinkDest       =   '/posts'        # * ... [OK] - TeamRem: DON'T EDIT THAT OR I WILL KILL YOU (BREAKING CHANGES IF THE PERMALINKS ARE NOT SET RESPECTFULLY + PROBS' WILL FUCK UP SEO FOR WEEKS IF YOU DON'T 301 ON THE HORRIBLE DOMAIN NAME REGISTRAR DASHBOARD, RESPECTFULLY TOO).
-
+homepage.layout                 =   "custom"        # * ... [OK] - TeamRem: DON'T EDIT THAT OR I WILL KILL YOU (you'll guess why if you only try it locally)
+homepage.homepageImage          =   "../assets/img/THIS-IS-FOR-DEBUGGING-PURPOSES.png"   # * ... [DEBUG] - TeamRem: ONLY FOR DEBUGGING
 # * ... ~ End of CUSTOM
 
 #================
@@ -73,7 +74,6 @@ homepage.showMoreLinkDest       =   '/posts'        # * ... [OK] - TeamRem: DON'
 # article.showPagination        =   true            # * ... [OK] - TeamRem: you can edit this as you prefer, but it would be very ballot to set it to false imo.
 # article.invertPagination      =   false           # * ... [OK] - TeamRem: you can edit this as you prefer.
 # article.showReadingTime       =   true            # * ... [OK] - TeamRem: you can edit this as you prefer, but it would be very ballot to set it to false imo.
-# homepage.layout               =   "page"          # * ... [OK] - TeamRem: you can edit this as you prefer, but TEST IT before ANY push2prod + Additional REM: the default behaviour is not exactly the same as the "page" state, contrary to what is documented.
 # homepage.showRecentItems      =   5               # * ... [OK] - TeamRem: you can edit this as you prefer.
 # homepage.showMoreLink         =   false           # * ... [OK] - TeamRem: you can edit this as you prefer, but TEST IT before ANY push2prod.
 
