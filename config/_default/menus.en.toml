@@ -11,10 +11,22 @@
   weight = 20
 
 [[main]]
-  pre = "github"
-  name = "GitHub"
-  url = "https://github.com/InVR-Intech-Paris"
+  identifier = "twitter"
+  pre = "twitter"
+  url = "https://twitter.com/InVR_Paris"
   weight = 30
+
+[[main]]
+  identifier = "instagram"
+  pre = "instagram"
+  url = "https://www.instagram.com/invr_paris/"
+  weight = 40
+
+[[main]]
+  identifier = "github"
+  pre = "github"
+  url = "https://github.com/InVR-Intech-Paris"
+  weight = 50
 
 [[footer]]
   name = "Privacy"
