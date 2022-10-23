@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div id="tilt-trigger">
+      <div id="tilt-target">
+        <img src="https://i.ibb.co/jDjRGsg/logo.png" alt="logo" />
+        <h1>Infinitely creative solutions</h1>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="./vanilla-tilt.min.js"></script>
+
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector("#tilt-target"), {
+        max: 25,
+        glare: false,
+        reverse: true,
+        speed: 1500,
+        "mouse-event-element": "#tilt-trigger",
+      });
+    </script>
+  </body>
+</html>

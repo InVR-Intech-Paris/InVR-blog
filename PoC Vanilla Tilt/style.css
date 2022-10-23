@@ -1,0 +1,68 @@
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(73, 9, 121, 1) 35%,
+    rgba(36, 29, 0, 1) 100%
+  );
+}
+
+#tilt-target {
+  width: 500px;
+  height: 400px;
+  text-align: center;
+
+  transform-style: preserve-3d;
+  /* Delay for some hardware acceleration issues */
+}
+
+#tilt-target * {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+#tilt-target img {
+  margin-top: -10%;
+  width: 100%;
+  height: 100%;
+  transition-duration: 1s;
+  transition-delay: 0.05s; /* Delay for hardware acceleration considerations */
+  margin-bottom: -10%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 0.75rem rgba(1, 0, 21, 0.6));
+}
+
+#tilt-target:hover img {
+  filter: drop-shadow(20px 10px 4px rgba(0, 11, 24, 0.15));
+}
+
+#tilt-trigger h1 {
+  color: white;
+  opacity: 80%;
+  margin-top: -6%;
+  filter: drop-shadow(0 0 0.75rem rgba(1, 0, 21, 0.3));
+  transition-duration: 0.28s;
+}
+
+#tilt-trigger:hover h1 {
+  transform: translateZ(125px);
+  margin-top: -15%;
+  filter: drop-shadow(5px 3px 2px rgba(0, 11, 24, 0.15));
+  opacity: 100%;
+}
+
+#tilt-trigger {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* DEBUG */
+
+* {
+  margin: auto;
+}
+
+#tilt-target {
+  padding-bottom: 4%;
+  padding-top: 4%;
+}
