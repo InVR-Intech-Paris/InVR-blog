@@ -13,7 +13,6 @@ body {
   text-align: center;
 
   transform-style: preserve-3d;
-  /* Delay for some hardware acceleration issues */
 }
 
 #tilt-target * {
