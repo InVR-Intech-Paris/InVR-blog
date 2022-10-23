@@ -403,55 +403,51 @@
   }
 
   #tilt-here img {
-    margin: 0 auto;
     max-width: 70%;
-    transform: translate(0, -10%);
-    width: 100%;
-    height: 100%;
-    transition-duration: 1s;
-    transition-delay: 0.05s; /* Delay for hardware acceleration considerations */
+    height: 550px;
+    margin: 0 auto;
     margin-bottom: -5%;
+    transform: translate(0, -10%);
     object-fit: contain;
-    filter: drop-shadow(0 0 0.75rem rgba(1, 0, 21, 0.6));
-  }
-
-  #tilt-here:hover img {
-    filter: drop-shadow(20px 10px 4px rgba(0, 11, 24, 0.15));
+    filter: drop-shadow(0 0 0.75rem rgba(1, 0, 21, 0.3));
+    transition-duration: 1s;
   }
 
   #tilt-here h1 {
     opacity: 80%;
-    filter: drop-shadow(0 0 0.75rem rgba(1, 0, 21, 0.3));
+    filter: drop-shadow(0 0 0.75rem rgba(1, 0, 21, 0.1));
     margin-top: -15%;
     transition-duration: 0.28s;
   }
 
   #tilt-here:hover h1 {
     transform: translateZ(145px);
-    filter: drop-shadow(5px 3px 2px rgba(0, 11, 24, 0.15));
+    filter: drop-shadow(5px 3px 2px rgba(0, 11, 24, 0.06));
     opacity: 100%;
   }
 
   #tilt-here h2 {
     opacity: 80%;
-    filter: drop-shadow(0 0 0.75rem rgba(1, 0, 21, 0.3));
+    filter: drop-shadow(0 0 0.75rem rgba(1, 0, 21, 0.1));
     transition-duration: 0.28s;
   }
 
   #tilt-here:hover h2 {
     transform: translateZ(175px);
-    filter: drop-shadow(5px 3px 2px rgba(0, 11, 24, 0.15));
+    filter: drop-shadow(5px 3px 2px rgba(0, 11, 24, 0.06));
     opacity: 100%;
   }
 
   #tilt-here > #home-hero-social-medias {
     transform-style: preserve-3d;
     opacity: 80%;
+    filter: drop-shadow(0 0 0.75rem rgba(1, 0, 21, 0.1));
     transition-duration: 0.28s;
   }
 
-  #tilt-here:hover #home-hero-social-medias {
+  #tilt-here:hover > #home-hero-social-medias {
     transform: translateZ(175px);
+    filter: drop-shadow(5px 3px 2px rgba(0, 11, 24, 0.06));
     opacity: 100%;
   }
 </style>
