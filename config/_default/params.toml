@@ -55,7 +55,7 @@ homepage.showRecent             =   true            # * ... [OK] - TeamRem: you 
 article.showEdit                =   false           # * ... [OK] - TeamRem: DON'T EDIT THAT OR I WILL KILL YOU (I prefer Determinism exploits/Gobuster attacks rather than crawlers with requirements set respectfully).
 homepage.showMoreLinkDest       =   '/posts'        # * ... [OK] - TeamRem: DON'T EDIT THAT OR I WILL KILL YOU (BREAKING CHANGES IF THE PERMALINKS ARE NOT SET RESPECTFULLY + PROBS' WILL FUCK UP SEO FOR WEEKS IF YOU DON'T 301 ON THE HORRIBLE DOMAIN NAME REGISTRAR DASHBOARD, RESPECTFULLY TOO).
 
-# * ... ~ End of CUSTOM
+# * ... ~ End of CUSTOM ~
 
 #================
 # * ... DEFAULT
