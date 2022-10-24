@@ -35,7 +35,6 @@ article.showTaxonomies          =   true            # * ... [OK] - TeamRem: DON'
 # * ... Behaviours
 #-------------------
 autoSwitchAppearance            =   false           # * ... [OK] - Expected behaviour: forces the theme to be dark on First-Time Visit.
-# header.layout                   =   "hamburger"     # * ... [OK] - TeamRem: you can edit this as you prefer.
 footer.showCopyright            =   false           # * ... [OK] - TeamRem: you can edit this as you prefer.
 footer.showThemeAttribution     =   false           # * ... [OK] - TeamRem: you can edit this as you prefer.
 
