@@ -2,7 +2,6 @@
 
 [[main]]
   name = "Rejoignez le staff !"
-  pre = "join-us"
   url = "https://docs.google.com/forms/d/e/1FAIpQLSclmWkxxPw0YzV88jpH0Ro0KMTrTV66EtN43z_jNrXmnULeCw/viewform"
   weight = 5
 
