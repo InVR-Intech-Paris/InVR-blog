@@ -1,8 +1,8 @@
-{{ if isset .Params "btnClass" }}
-  {{ if isset .Params "btnHref" }}
-    {{ if isset .Params "btnLabel" }}
-      <div class='{{ .Get "btnClass" }}'>
-        <a href='{{ .Get "btnHref" }}'>{{ .Get "btnLabel" }}</a>
+{{ if isset .Params "class" }}
+  {{ if isset .Params "href" }}
+    {{ if isset .Params "label" }}
+      <div align='{{ .Get "align" }}' class='{{ .Get "class" }}'>
+        <a href='{{ .Get "href" }}'>{{ .Get "label" }}</a>
       </div>
     {{ end }}
   {{ end }}

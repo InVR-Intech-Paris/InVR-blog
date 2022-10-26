@@ -1,36 +1,94 @@
 /* Button 'Join staff' */
 .enroll-staff-btn a, .md\:flex > a:first-of-type {
-    text-align: center;
-    background-color: #339DFF;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    border-radius: 15px;
-    --w: calc(2em * 4.9);
-    width: var(--w);
-    filter: drop-shadow(5px 5px 0.75rem rgba(1, 0, 21, 0.2));
-    transition: all .2s;
+  text-align: center;
+  background-color: #339DFF;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 15px;
+  --w: calc(2em * 4.9);
+  width: var(--w);
+  filter: drop-shadow(5px 5px 0.75rem rgba(1, 0, 21, 0.2));
+  transition: all .2s;
 }
 
 .enroll-staff-btn a:hover, .md\:flex > a:first-of-type:hover {
-    background-color: #FFFFFF;
-    color: #339DFF;
-    filter: drop-shadow(0px 0px 0.75rem rgba(177, 173, 255, 0.2));
-    transform: scale(1.1);
-    font-weight: 600;
+  background-color: #FFFFFF;
+  color: #339DFF;
+  filter: drop-shadow(0px 0px 0.75rem rgba(177, 173, 255, 0.2));
+  transform: scale(1.1);
+  font-weight: 600;
 }
-
 /* ! Button 'Join staff' */
 
 /* Monkey patches for CTAs */
 .enroll-staff-btn a {
-    display: block;
-    color: #FFFFFF;
-    padding-right: 18px;
-    padding-left: 18px;
-    width: calc(var(--w) * 1.2);
+  display: block;
+  color: #FFFFFF;
+  padding-right: 18px;
+  padding-left: 18px;
+  width: calc(var(--w) * 1.2);
 }
 
 .enroll-staff-btn a:hover {
-    border-radius: 15px;
+  border-radius: 15px;
 }
-/* ! Monkey patches for CTAs */
+/* !Monkey patches for CTAs */
+
+/* Cheating on sections props */
+#main-content > article > section > table {
+  font-size: 1.6em;
+}
+
+.max-w-prose {
+  max-width: 125ch;
+}
+
+.prose {
+  max-width: 125ch;
+}
+/* !Cheating on sections props */
+
+/* Section impl */
+.invr-section-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.invr-section-wrapper {
+  margin-top: 25px;    
+}
+
+.invr-section-wrapper * {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@media only screen and (max-width: 1023px) {
+  .invr-section-wrapper * {
+    padding-top: 15px;
+  }
+}
+
+.invr-section-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .invr-section-column {
+    flex: 1;
+  }
+}
+
+.invr-column-elements * {
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0 auto;
+}
+/* !Section impl */
