@@ -37,6 +37,11 @@
 /* !Monkey patches for CTAs */
 
 /* Cheating on sections props */
+header.flex-col img {
+  width: 80%;
+  height: 80%;
+}
+
 #main-content>article>section>table {
   font-size: 1.6em;
 }
@@ -95,6 +100,11 @@
 }
 
 @media (max-width: 1023px) {
+
+  .invr-section-wrapper {
+    margin-top: -50px;
+  }
+
   .invr-section-row * {
     text-align: center;
     justify-content: center;
