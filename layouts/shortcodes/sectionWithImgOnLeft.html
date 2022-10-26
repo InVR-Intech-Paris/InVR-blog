@@ -3,27 +3,27 @@
     <div class='invr-section-column invr-section-first-element'>
       <div class='invr-column-elements'>
         {{ if isset .Params "sectionLeftImg" }}
-          <img src='{{ .Get "sectionLeftImg" }}'>
+        <img src='{{ .Get "sectionLeftImg" }}'>
         {{ end }}
       </div>
     </div>
     <div class='invr-section-column invr-section-second-element'>
       <div class='invr-column-elements'>
         {{ if isset .Params "sectionRightTitle" }}
-          <h3>{{ .Get "sectionRightTitle" }}</h3>
+        <h3>{{ .Get "sectionRightTitle" }}</h3>
         {{ end }}
         {{ if isset .Params "sectionRightSubtitle" }}
-          <h4>{{ .Get "sectionRightSubtitle" }}</h4>
+        <h4>{{ .Get "sectionRightSubtitle" }}</h4>
         {{ end }}
         {{ if isset .Params "sectionRightCopy" }}
-          <p>{{ .Get "sectionRightCopy" }}</p>
+        <p>{{ .Get "sectionRightCopy" }}</p>
         {{ end }}
         {{ if isset .Params "sectionRightCtaHref" }}
-          {{ if isset .Params "sectionRightCtaLabel" }}
-            <div align='center' class='enroll-staff-btn'>
-              <a href='{{ .Get "sectionRightCtaHref" }}'>{{ .Get "sectionRightCtaLabel" }}</a>
-            </div>
-          {{ end }}
+        {{ if isset .Params "sectionRightCtaLabel" }}
+        <div align='center' class='enroll-staff-btn'>
+          <a href='{{ .Get "sectionRightCtaHref" }}'>{{ .Get "sectionRightCtaLabel" }}</a>
+        </div>
+        {{ end }}
         {{ end }}
       </div>
     </div>
