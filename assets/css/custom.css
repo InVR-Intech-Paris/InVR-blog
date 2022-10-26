@@ -1,5 +1,6 @@
 /* Button 'Join staff' */
-.enroll-staff-btn a, .md\:flex > a:first-of-type {
+.enroll-staff-btn a,
+.md\:flex>a:first-of-type {
   text-align: center;
   background-color: #339DFF;
   padding-bottom: 10px;
@@ -11,13 +12,15 @@
   transition: all .2s;
 }
 
-.enroll-staff-btn a:hover, .md\:flex > a:first-of-type:hover {
+.enroll-staff-btn a:hover,
+.md\:flex>a:first-of-type:hover {
   background-color: #FFFFFF;
   color: #339DFF;
   filter: drop-shadow(0px 0px 0.75rem rgba(177, 173, 255, 0.2));
   transform: scale(1.1);
   font-weight: 600;
 }
+
 /* ! Button 'Join staff' */
 
 /* Monkey patches for CTAs */
@@ -32,10 +35,11 @@
 .enroll-staff-btn a:hover {
   border-radius: 15px;
 }
+
 /* !Monkey patches for CTAs */
 
 /* Cheating on sections props */
-#main-content > article > section > table {
+#main-content>article>section>table {
   font-size: 1.6em;
 }
 
@@ -46,6 +50,7 @@
 .prose {
   max-width: 125ch;
 }
+
 /* !Cheating on sections props */
 
 /* Section impl */
@@ -56,7 +61,7 @@
 }
 
 .invr-section-wrapper {
-  margin-top: 25px;    
+  margin-top: 25px;
 }
 
 .invr-section-wrapper * {
@@ -91,55 +96,85 @@
   height: 100%;
   margin: 0 auto;
 }
+
+@media (max-width: 1023px) {
+  .invr-section-row * {
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .invr-section-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .invr-section-row .first-div {
+    order: 2;
+  }
+
+  .invr-section-row .second-div {
+    order: 1;
+  }
+}
+
 /* !Section impl */
 
 /* Accordion impl */
 .accordion {
-    width: 90%;
-    max-width: 1000px;
-    margin: 2rem auto;
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.accordion-item {
+  background-color: #fff;
+  color: #111;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+
+@media(max-width:767px) {
+  .accordion {
+    font-size: 14px;
   }
-  .accordion-item {
-    background-color: #fff;
-    color: #111;
-    margin: 1rem 0;
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
-  }
-  .accordion-item-header {
-    padding: 0.5rem 3rem 0.5rem 1rem;
-    min-height: 3.5rem;
-    line-height: 1.25rem;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-  }
-  .accordion-item-header::after {
-    content: "\002B";
-    font-size: 2rem;
-    position: absolute;
-    right: 1rem;
-  }
-  .accordion-item-header.active::after {
-    content: "\2212";
-  }
-  .accordion-item-body {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-  }
-  .accordion-item-body-content {
-    padding: 1rem;
-    line-height: 1.5rem;
-    border-top: 1px solid;
-    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
-  }
-  
-  @media(max-width:767px) {
-    html {
-      font-size: 14px;
-    }
-  }
+}
+
 /* !Accordion impl */
