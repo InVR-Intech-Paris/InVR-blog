@@ -20,7 +20,6 @@
   transform: scale(1.1);
   font-weight: 600;
 }
-
 /* ! Button 'Join staff' */
 
 /* Monkey patches for CTAs */
@@ -35,7 +34,6 @@
 .enroll-staff-btn a:hover {
   border-radius: 15px;
 }
-
 /* !Monkey patches for CTAs */
 
 /* Cheating on sections props */
@@ -50,7 +48,6 @@
 .prose {
   max-width: 125ch;
 }
-
 /* !Cheating on sections props */
 
 /* Section impl */
@@ -118,7 +115,6 @@
     order: 1;
   }
 }
-
 /* !Section impl */
 
 /* Accordion impl */
@@ -176,5 +172,4 @@
     font-size: 14px;
   }
 }
-
 /* !Accordion impl */
