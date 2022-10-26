@@ -53,7 +53,7 @@ homepage.showRecent             =   true            # TeamRem: you can edit this
 #-------------------
 article.showEdit                =   false           # TeamRem: DON'T EDIT THAT (I prefer Determinism exploits/Gobuster attacks rather than crawlers with requirements set respectfully).
 homepage.showMoreLinkDest       =   '/posts'        # TeamRem: DON'T EDIT THAT (BREAKING CHANGES IF THE PERMALINKS ARE NOT SET RESPECTFULLY + PROBS' WILL FUCK UP SEO FOR WEEKS IF YOU DON'T 301 ON THE HORRIBLE DOMAIN NAME REGISTRAR DASHBOARD, RESPECTFULLY TOO).
-# homepage.layout                 =   "custom"      # TeamRem: DON'T EDIT THAT (you'll guess why if you only try it locally)
+# homepage.layout               =   "custom"        # TeamRem: DON'T EDIT THAT (you'll guess why if you only try it locally)
 homepage.homepageImage          =   "../assets/img/in-vr-logo.png" # TeamRem: have fun.
 
 # * ... ~ End of CUSTOM

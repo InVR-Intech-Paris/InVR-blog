@@ -46,6 +46,7 @@ description: "Infinitely creative solutions."
 &nbsp;
 
 ### Lorem ipsum dolor sit amet, consectetur adipiscing elit
+
 &nbsp;
 | 3 | 14 | 30000 $ |
 | :-: | :-: | :-: |
