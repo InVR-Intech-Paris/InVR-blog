@@ -1,6 +1,6 @@
 <div class='invr-section-wrapper'>
   <div class='invr-section-row'>
-    <div class='invr-section-column second-div'>
+    <div class='invr-section-column invr-section-second-element'>
       <div class='invr-column-elements'>
         {{ if isset .Params "sectionLeftTitle" }}
           <h3>{{ .Get "sectionLeftTitle" }}</h3>
@@ -20,7 +20,7 @@
         {{ end }}
       </div>
     </div>
-    <div class='invr-section-column first-div'>
+    <div class='invr-section-column invr-section-first-element'>
       <div class='invr-column-elements'>
         {{ if isset .Params "sectionRightImg" }}
           <img src='{{ .Get "sectionRightImg" }}'>

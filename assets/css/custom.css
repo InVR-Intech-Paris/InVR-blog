@@ -107,11 +107,11 @@
     flex-direction: column;
   }
 
-  .invr-section-row .first-div {
+  .invr-section-row .invr-section-first-element {
     order: 2;
   }
 
-  .invr-section-row .second-div {
+  .invr-section-row .invr-section-second-element {
     order: 1;
   }
 }
