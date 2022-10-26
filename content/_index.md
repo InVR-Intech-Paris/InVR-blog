@@ -40,7 +40,5 @@ description: "Infinitely creative solutions."
 &nbsp;
 &nbsp;
 
-### Foire aux questions
-
+# Foire aux questions
 {{< accordion >}}
-
