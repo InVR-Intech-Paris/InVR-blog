@@ -177,7 +177,8 @@ header.flex-col img {
 
 .accordion-item-body-content {
   padding: 1rem;
-  line-height: 1.5rem;
+  min-height: 8.5rem;
+  line-height: 1.0rem;
   border-top: 1px solid;
   border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
 }
@@ -186,10 +187,5 @@ header.flex-col img {
   .accordion {
     font-size: 14px;
   }
-}
-
-.accordion-item-header {
-  min-height: 4.5rem;
-  line-height: 1.00rem;
 }
 /* !Accordion impl */
