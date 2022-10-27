@@ -182,9 +182,14 @@ header.flex-col img {
   border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
 }
 
-@media(max-width:767px) {
+@media(max-width:1023px) {
   .accordion {
     font-size: 14px;
   }
+}
+
+.accordion-item-header {
+  min-height: 4.5rem;
+  line-height: 1.00rem;
 }
 /* !Accordion impl */
