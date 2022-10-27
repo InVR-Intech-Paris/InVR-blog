@@ -73,12 +73,6 @@ header.flex-col img {
   margin-bottom: auto;
 }
 
-@media only screen and (max-width: 1023px) {
-  .invr-section-wrapper * {
-    padding-top: 15px;
-  }
-}
-
 .invr-section-column {
   display: flex;
   flex-direction: column;
@@ -100,6 +94,17 @@ header.flex-col img {
 }
 
 @media (max-width: 1023px) {
+  .max-w-prose {
+    max-width: 65ch;
+  }
+  
+  .prose {
+    max-width: 65ch;
+  }
+  
+  .invr-section-wrapper * {
+    padding-top: 15px;
+  }
 
   .invr-section-wrapper {
     margin-top: -50px;
