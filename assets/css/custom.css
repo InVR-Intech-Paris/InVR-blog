@@ -183,6 +183,10 @@ header.flex-col img {
   border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
 }
 
+.accordion h4 {
+  color: #27272A;
+}
+
 @media(max-width:1023px) {
   .accordion {
     font-size: 14px;
