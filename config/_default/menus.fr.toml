@@ -11,6 +11,11 @@
   weight = 10
 
 [[main]]
+  name = "Contact"
+  url = "mailto:contact@invr.fr"
+  weight = 10
+
+[[main]]
   name = "Topics"
   pageRef = "topics"
   weight = 20

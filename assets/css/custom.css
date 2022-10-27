@@ -97,11 +97,11 @@ header.flex-col img {
   .max-w-prose {
     max-width: 65ch;
   }
-  
+
   .prose {
     max-width: 65ch;
   }
-  
+
   .invr-section-wrapper * {
     padding-top: 15px;
   }
