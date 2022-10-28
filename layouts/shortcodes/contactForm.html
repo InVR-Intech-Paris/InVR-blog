@@ -3,6 +3,7 @@
 {{ $msgTxt := "Votre message :" }}   {{ if isset .Params "msgTxt" }}    {{ $msgTxt = .Get "emailTxt" }}     {{ end }}
 {{ $submitTxt := "Envoyer" }}        {{ if isset .Params "submitTxt" }} {{ $submitTxt = .Get "submitTxt" }} {{ end }}
 
+{{ if .Site.Params.Abaddon.DisableContactForm | default false }}
 <h3>{{ $title }}</h4>
 <form id="invr-contact-form"
   action="https://formspree.io/f/myyvndlq"
@@ -20,3 +21,4 @@
     {{ $submitTxt }}
   </button>
 </form>
+{{ end }}
