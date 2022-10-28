@@ -4,3 +4,15 @@ baseURL                 = "https://invr.fr/"    # * ... [OK]
 languageCode            = "fr"                  # * ... [OK]
 defaultContentLanguage  = "fr"                  # * ... [OK]
 author                  = "authors"             # * ... [OK] - But should be moved in ./taxonomies.toml => https://github.com/nunocoracao/blowfish/issues/126
+
+[[faq]]
+question = "2+2 ="
+answer = "4"
+
+[[faq]]
+question = "4+2 ="
+answer = "6"
+
+[[faq]]
+question = "7+2 ="
+answer = "9"

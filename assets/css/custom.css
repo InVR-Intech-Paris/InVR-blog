@@ -20,9 +20,7 @@
   transform: scale(1.1);
   font-weight: 600;
 }
-/* ! Button 'Join staff' */
 
-/* Monkey patches for CTAs */
 .enroll-staff-btn a {
   display: block;
   color: #FFF;
@@ -34,7 +32,7 @@
 .enroll-staff-btn a:hover {
   border-radius: 15px;
 }
-/* !Monkey patches for CTAs */
+/* ! Button 'Join staff' */
 
 /* Cheating on sections props */
 header.flex-col img {
@@ -56,6 +54,12 @@ header.flex-col img {
 /* !Cheating on sections props */
 
 /* Section impl */
+.invr-section-column img {
+  border-radius: 15px;
+  filter: drop-shadow(5px 5px 0.75rem rgba(1, 0, 21, 0.2));
+  transition-duration: 0.7s;
+}
+
 .invr-section-row {
   display: flex;
   flex-direction: row;
@@ -80,55 +84,11 @@ header.flex-col img {
   flex-basis: 100%;
 }
 
-@media only screen and (min-width: 1024px) {
-  .invr-section-column {
-    flex: 1;
-  }
-}
-
 .invr-column-elements * {
   text-align: center;
   justify-content: center;
   height: 100%;
   margin: 0 auto;
-}
-
-@media (max-width: 1023px) {
-  .max-w-prose {
-    max-width: 65ch;
-  }
-
-  .prose {
-    max-width: 65ch;
-  }
-
-  .invr-section-wrapper * {
-    padding-top: 15px;
-  }
-
-  .invr-section-wrapper {
-    margin-top: -50px;
-  }
-
-  .invr-section-row * {
-    text-align: center;
-    justify-content: center;
-    height: 100%;
-    margin: 0 auto;
-  }
-
-  .invr-section-row {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .invr-section-row .invr-section-element-a {
-    order: 2;
-  }
-
-  .invr-section-row .invr-section-element-b {
-    order: 1;
-  }
 }
 /* !Section impl */
 
@@ -185,11 +145,60 @@ header.flex-col img {
 
 .accordion h4 {
   color: #27272A;
+  margin-bottom: 1.2em;
+}
+/* !Accordion impl */
+
+/* Media */
+  @media (min-width: 1024px) {
+  .invr-section-column img:hover {
+    filter: drop-shadow(0 0 0 rgba(0, 0, 0, .0));
+  }
+
+  .invr-section-column {
+    flex: 1;
+  }
 }
 
-@media(max-width:1023px) {
+@media (max-width: 1023px) {
   .accordion {
     font-size: 14px;
   }
+
+  .max-w-prose {
+    max-width: 65ch;
+  }
+
+  .prose {
+    max-width: 65ch;
+  }
+
+  .invr-section-wrapper * {
+    padding-top: 15px;
+  }
+
+  .invr-section-wrapper {
+    margin-top: -50px;
+  }
+
+  .invr-section-row * {
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .invr-section-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .invr-section-row .invr-section-element-a {
+    order: 2;
+  }
+
+  .invr-section-row .invr-section-element-b {
+    order: 1;
+  }
 }
-/* !Accordion impl */
+/* ! Media */
