@@ -37,6 +37,7 @@ article.showTaxonomies          =   true            # * ... [OK] - TeamRem: DON'
 autoSwitchAppearance            =   false           # * ... [OK] - Expected behaviour: forces the theme to be dark on First-Time Visit.
 footer.showCopyright            =   false           # * ... [OK] - TeamRem: you can edit this as you prefer.
 footer.showThemeAttribution     =   false           # * ... [OK] - TeamRem: you can edit this as you prefer.
+disableImageZoom                =   true            # * ... [OK] - Gotta Re% Open Source
 
 #-------------------
 # * ... Features
