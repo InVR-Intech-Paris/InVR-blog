@@ -1,0 +1,49 @@
+{{ $img := "" }}              {{ if isset .Params "img" }}                 {{ $img = .Get "img" }}                      {{ end }}
+{{ $title := "" }}            {{ if isset .Params "textSectionTitle" }}    {{ $title = .Get "textSectionTitle" }}      {{ end }}
+{{ $subtitle := "" }}         {{ if isset .Params "textSectionSubtitle" }} {{ $subtitle = .Get "textSectionSubtitle" }} {{ end }}
+{{ $copy := "" }}             {{ if isset .Params "textSectionCopy" }}     {{ $copy = .Get "textSectionCopy" }}         {{ end }}
+{{ $href := "" }}            {{ if isset .Params "ctaHref" }}             {{ $href = .Get "ctaHref" }}                 {{ end }}
+{{ $label := "Lorem Ipsum" }} {{ if isset .Params "ctaLabel" }}            {{ $label = .Get "ctaLabel" }}               {{ end }}
+{{ $pos := "imgOnRight"}}     {{ if isset .Params "pos" }}                 {{ $pos = .Get "pos" }}                      {{ end }}
+
+{{ if (eq $pos "imgOnLeft") }}
+<div class='invr-section-wrapper'>
+  <div class='invr-section-row'>
+    <div class='invr-section-column invr-section-element-b'>
+      <div class='invr-column-elements'>
+        {{ if (not (eq $title "")) }} <h3>{{ $title }}</h3> {{ end }}
+        {{ if (not (eq $subtitle "")) }} <h4>{{ $subtitle }}</h4> {{ end }}
+        {{ if (not (eq $copy "")) }} <p>{{ $copy }}</p> {{ end }}
+        <div align='center' class='enroll-staff-btn'>
+          {{ if (not (eq $href "")) }}<a href='{{ $href }}'>{{ $label }}</a> {{ end }}          
+        </div>
+      </div>
+    </div>
+    <div class='invr-section-column invr-section-element-a'>
+      <div class='invr-column-elements'>
+        {{ if (not (eq $img "")) }} <img src='{{ $img }}'> {{ end }}
+      </div>
+    </div>
+  </div>
+</div>
+{{ else }}
+<div class='invr-section-wrapper'>
+  <div class='invr-section-row'>
+    <div class='invr-section-column invr-section-element-a'>
+      <div class='invr-column-elements'>
+        {{ if (not (eq $img "")) }} <img src='{{ $img }}'> {{ end }}
+      </div>
+    </div>
+    <div class='invr-section-column invr-section-element-b'>
+      <div class='invr-column-elements'>
+        {{ if (not (eq $title "")) }} <h3>{{ $title }}</h3> {{ end }}
+        {{ if (not (eq $subtitle "")) }} <h4>{{ $subtitle }}</h4> {{ end }}
+        {{ if (not (eq $copy "")) }} <p>{{ $copy }}</p> {{ end }}
+        <div align='center' class='enroll-staff-btn'>
+          {{ if (not (eq $href "")) }}<a href='{{ $href }}'>{{ $label }}</a> {{ end }}          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

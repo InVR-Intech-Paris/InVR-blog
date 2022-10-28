@@ -1,16 +1,20 @@
-{{ if not .Site.Params.Abaddon.disableContactForm | default true }}
+{{ $emailTxt := "Votre email :" }}   {{ if isset .Params "emailTxt" }}  {{ $emailTxt = .Get "emailTxt" }}   {{ end }}
+{{ $msgTxt := "Votre message :" }}   {{ if isset .Params "msgTxt" }}    {{ $msgTxt = .Get "emailTxt" }}     {{ end }}
+{{ $submitTxt := "Envoyer" }}        {{ if isset .Params "submitTxt" }} {{ $submitTxt = .Get "submitTxt" }} {{ end }}
+
 <form id="invr-contact-form"
   action="https://formspree.io/f/myyvndlq"
   method="POST"
 >
   <label>
-    Votre email :
+    {{ $emailTxt }}
     <input type="email" name="email">
   </label>
   <label>
-    Votre message :
+    {{ $msgTxt }}
     <textarea name="message"></textarea>
   </label>
-  <button type="submit">Envoyer</button>
+  <button type="submit">
+    {{ $submitTxt }}
+  </button>
 </form>
-{{ end }}

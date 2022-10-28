@@ -122,11 +122,11 @@ header.flex-col img {
     flex-direction: column;
   }
 
-  .invr-section-row .invr-section-first-element {
+  .invr-section-row .invr-section-element-a {
     order: 2;
   }
 
-  .invr-section-row .invr-section-second-element {
+  .invr-section-row .invr-section-element-b {
     order: 1;
   }
 }
