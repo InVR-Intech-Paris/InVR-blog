@@ -1,3 +1,4 @@
+{{ if not .Site.Params.Abaddon.disableContactForm | default true }}
 <form id="invr-contact-form"
   action="https://formspree.io/f/myyvndlq"
   method="POST"
@@ -12,3 +13,4 @@
   </label>
   <button type="submit">Envoyer</button>
 </form>
+{{ end }}
