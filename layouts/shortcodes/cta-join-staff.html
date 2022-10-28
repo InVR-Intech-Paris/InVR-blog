@@ -1,9 +1,0 @@
-{{ if isset .Params "class" }}
-{{ if isset .Params "href" }}
-{{ if isset .Params "label" }}
-<div align='{{ .Get "align" }}' class='{{ .Get "class" }}'>
-  <a href='{{ .Get "href" }}'>{{ .Get "label" }}</a>
-</div>
-{{ end }}
-{{ end }}
-{{ end }}

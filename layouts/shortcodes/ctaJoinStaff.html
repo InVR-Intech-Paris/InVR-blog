@@ -1,0 +1,8 @@
+{{ $align := "left" }}             {{ if isset .Params "align" }} {{ $align = .Get "align" }} {{ end }}
+{{ $class := "enroll-staff-btn" }} {{ if isset .Params "class" }} {{ $class = .Get "class" }} {{ end }}
+{{ $href := "#" }}                 {{ if isset .Params "href" }}  {{ $href = .Get "href" }}   {{ end }}
+{{ $label := "Lorem Ipsum" }}      {{ if isset .Params "label" }} {{ $label = .Get "label" }} {{ end }}
+
+<div align='{{ $align }}' class='{{ $class }}'>
+  <a href='{{ $href }}'>{{ $label }}</a>
+</div>

@@ -1,15 +1,9 @@
-{{ if isset .Params "src" }}
-{{ if isset .Params "align" }}
-{{ if isset .Params "class" }}
-<div align='{{ .Get "align" }}' class='{{ .Get "class" }}'>
-  {{ else }}
-  <div align='{{ .Get "align" }}'>
-    {{ end }}
-    {{ if isset .Params "alt" }}
-    <img src='{{ .Get "src" }}' alt='{{ .Get "alt" }}'>
-    {{ else }}
-    <img src='{{ .Get "src" }}' alt="">
-    {{ end }}
-  </div>
-  {{ end }}
-  {{ end }}
+{{ $src := "#" }}      {{ if isset .Params "src" }}   {{ $src = .Get "src" }}     {{ end }}
+{{ $align := "left" }} {{ if isset .Params "align" }} {{ $align = .Get "align" }} {{ end }}
+{{ $class := "" }}     {{ if isset .Params "class" }} {{ $class = .Get "class" }} {{ end }}
+{{ $alt := "" }}       {{ if isset .Params "alt" }}   {{ $alt = .Get "alt" }}     {{ end }}
+{{ $src := "#" }}      {{ if isset .Params "src" }}   {{ $src = .Get "src" }}     {{ end }}
+
+<div align='{{ $align }}' class='{{ $class }}'>
+    <img src='{{ $src }}' alt='{{ $alt }}'>
+</div>
