@@ -1,5 +1,5 @@
 {{ $defaultValues := .Site.Data.etc.defaultValues.img }}
-{{ $isUnset       := .Site.Data.etc.blackArt.isUnset }}
+{{ $isUnset       := $defaultValues.isUnset }}
 {{ $src           := $defaultValues.src }}   {{ if isset .Params "src" }}   {{ $src = .Get "src" }}     {{ end }}
 {{ $align         := $defaultValues.align }} {{ if isset .Params "align" }} {{ $align = .Get "align" }} {{ end }}
 {{ $class         := $defaultValues.class }} {{ if isset .Params "class" }} {{ $class = .Get "class" }} {{ end }}

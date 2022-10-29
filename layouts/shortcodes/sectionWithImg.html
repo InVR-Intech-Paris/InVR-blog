@@ -1,5 +1,5 @@
 {{ $defaultValues := .Site.Data.etc.defaultValues.sectionWithImg }}
-{{ $isUnset       := .Site.Data.etc.blackArt.isUnset }}
+{{ $isUnset       := $defaultValues.isUnset }}
 {{ $img           := $defaultValues.img }}      {{ if isset .Params "img" }}                 {{ $img = .Get "img" }}                      {{ end }}
 {{ $title         := $defaultValues.title }}    {{ if isset .Params "textSectionTitle" }}    {{ $title = .Get "textSectionTitle" }}       {{ end }}
 {{ $subtitle      := $defaultValues.subtitle }} {{ if isset .Params "textSectionSubtitle" }} {{ $subtitle = .Get "textSectionSubtitle" }} {{ end }}
