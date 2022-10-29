@@ -1,21 +1,24 @@
-{{ $title := "Contactez-nous" }}     {{ if isset .Params "title" }}     {{ $title = .Get "title" }}         {{ end }}
-{{ $emailTxt := "Votre email :" }}   {{ if isset .Params "emailTxt" }}  {{ $emailTxt = .Get "emailTxt" }}   {{ end }}
-{{ $msgTxt := "Votre message :" }}   {{ if isset .Params "msgTxt" }}    {{ $msgTxt = .Get "msgTxt" }}       {{ end }}
-{{ $submitTxt := "Envoyer" }}        {{ if isset .Params "submitTxt" }} {{ $submitTxt = .Get "submitTxt" }} {{ end }}
+{{ $title := "Contactez-nous" }}                                                   {{ if isset .Params "title" }}            {{ $title = .Get "title" }}                       {{ end }}
+{{ $emailTxt := "Votre email" }}                                                   {{ if isset .Params "emailTxt" }}         {{ $emailTxt = .Get "emailTxt" }}                 {{ end }}
+{{ $msgTxt := "Votre message" }}                                                   {{ if isset .Params "msgTxt" }}           {{ $msgTxt = .Get "msgTxt" }}                     {{ end }}
+{{ $submitTxt := "Envoyer l'email" }}                                              {{ if isset .Params "submitTxt" }}        {{ $submitTxt = .Get "submitTxt" }}               {{ end }}
+{{ $emailPlaceholder := "johndoe@invr.fr" }}                                       {{ if isset .Params "emailPlaceholder" }} {{ $emailPlaceholder = .Get "emailPlaceholder" }} {{ end }}
+{{ $msgPlaceholder := "Écrivez l'email que vous souhaitez nous adresser ici..." }} {{ if isset .Params "msgPlaceholder" }}   {{ $msgPlaceholder = .Get "msgPlaceholder" }}     {{ end }}
 
-{{ if .Site.Params.Abaddon.EnableContactForm | default false }}
+{{ if .Site.Params.Abaddon.EnableContactForm | default true }}
 <h3>{{ $title }}</h4>
 <form id="invr-contact-form"
   action="https://formspree.io/f/myyvndlq"
   method="POST"
 >
-  <label>
+  <label for="contact-form-email">
     {{ $emailTxt }}
-    <input type="email" name="email">
+    <input type="email" name="email" id="contact-form-email" placeholder="{{ $emailPlaceholder }}">
   </label>
-  <label>
+  <hr style="width:0%;margin:0;padding:0;margin-top:15px;"></hr>
+  <label for="contact-form-message">
     {{ $msgTxt }}
-    <textarea name="message"></textarea>
+    <textarea name="message" id="contact-form-message" placeholder="{{ $msgPlaceholder }}"></textarea>
   </label>
   <button type="submit">
     {{ $submitTxt }}
