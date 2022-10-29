@@ -137,7 +137,7 @@ header.flex-col img {
 
 .accordion-item-body-content {
   padding: 1rem;
-  min-height: 8.5rem;
+  min-height: 4.5rem;
   line-height: 1.0rem;
   border-top: 1px solid;
   border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
