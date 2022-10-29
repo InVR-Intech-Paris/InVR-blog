@@ -1,12 +1,12 @@
 {{ $lang := "fr" }} {{ if isset .Params "lang" }} {{ $lang = .Get "lang" }} {{ end }}
-{{ $curRange := .Site.Data.qas.fr.values }}
+{{ $qas := .Site.Data.qas.fr.values }}
 
 {{ if eq $lang "en"}}
-    {{ $curRange = .Site.Data.qas.en.values }}
+    {{ $qas = .Site.Data.qas.en.values }}
 {{ end }}
 
 <div class="accordion">
-    {{ range $curRange }}
+    {{ range $qas }}
         <div class="accordion-item">
             <div class="accordion-item-header">
                 <h4>{{ .question }}</h4>
