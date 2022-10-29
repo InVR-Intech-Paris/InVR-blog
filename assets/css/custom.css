@@ -158,7 +158,7 @@ html {
   --w: calc(2em * 4.9);
 
   text-align: center;
-  background-color: #339dff;
+  background-color: #339DFF;
   padding-bottom: 10px;
   padding-top: 10px;
   border-radius: 15px;
@@ -168,9 +168,19 @@ html {
   font-weight: bold;
 }
 
+.enroll-staff-btn a:hover,
+.md\:flex > a:first-of-type:hover {
+  background-color: #FFF;
+  color: #339DFF;
+  filter: drop-shadow(0px 0px 0.75rem rgba(177, 173, 255, 0.2));
+  transform: scale(1.1);
+  font-weight: 600;
+  border-radius: 3em;
+}
+
 .enroll-staff-btn a {
   display: block;
-  color: #fff;
+  color: #FFF;
   padding-right: 18px;
   padding-left: 18px;
   width: calc(var(--w) * 1.2);
@@ -237,7 +247,7 @@ header.flex-col img {
 }
 
 .accordion-item {
-  background-color: #fff;
+  background-color: #FFF;
   color: #111;
   margin: 1rem 0;
   border-radius: 0.5rem;
@@ -290,6 +300,11 @@ header.flex-col img {
   margin-bottom: 1em;
 }
 
+#invr-contact-form:hover {
+  transform: scale(1.05);
+  border-radius: 1.5em 5em;
+}
+
 #invr-contact-form label {
   font-size: 120%;
 }
@@ -332,9 +347,9 @@ header.flex-col img {
   width: auto;
   border: none;
   font-weight: 555;
-  color: #fff;
+  color: #FFF;
   text-align: center;
-  background-color: #f76705;
+  background-color: #F76705;
   padding-bottom: 10px;
   padding-top: 10px;
   border-radius: 15px;
@@ -345,33 +360,18 @@ header.flex-col img {
   font-weight: bold;
 }
 
-@media (min-width: 1024px) {
-  #invr-contact-form:hover {
-    transform: scale(1.05);
-    border-radius: 1.5em 5em;
-  }
+#invr-contact-form button[type="submit"]:hover {
+  background-color: #FFF;
+  color: #F76705;
+  filter: drop-shadow(0px 0px 0.75rem rgba(177, 173, 255, 0.2));
+  transform: scale(1.1);
+  font-weight: 600;
+  border-radius: 3em;
+}
 
+@media (min-width: 1024px) {
   .invr-section-column img:hover {
     filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0));
-  }
-
-  .enroll-staff-btn a:hover,
-  .md\:flex > a:first-of-type:hover {
-    background-color: #ffffff;
-    color: #339dff;
-    filter: drop-shadow(0px 0px 0.75rem rgba(177, 173, 255, 0.2));
-    transform: scale(1.1);
-    font-weight: 600;
-    border-radius: 3em;
-  }
-
-  #invr-contact-form button[type="submit"]:hover {
-    background-color: #ffffff;
-    color: #f76705;
-    filter: drop-shadow(0px 0px 0.75rem rgba(177, 173, 255, 0.2));
-    transform: scale(1.1);
-    font-weight: 600;
-    border-radius: 3em;
   }
 
   .invr-section-column {
@@ -418,5 +418,34 @@ header.flex-col img {
 
   .invr-section-row .invr-section-element-b {
     order: 1;
+  }
+}
+
+/* ... Smartphones */
+@media only screen and (hover: none) and (pointer: coarse) {
+  #invr-contact-form button[type="submit"]:hover {
+    background-color: #FFF;
+    color: #F76705;
+    filter: drop-shadow(5px 5px 0.75rem rgba(1, 0, 21, 0.2));
+    transform: scale(1.0);
+    font-weight: 555;
+    color: #FFF;
+    background-color: #F76705;
+    border-radius: 15px;  
+  }
+
+  .enroll-staff-btn a:hover,
+  .md\:flex > a:first-of-type:hover {
+    background-color: #339DFF;
+    color: #FFF;
+    filter: drop-shadow(5px 5px 0.75rem rgba(1, 0, 21, 0.2));
+    transform: scale(1.0);
+    font-weight: bold;
+    border-radius: 15px;  
+  }
+
+  #invr-contact-form:hover {
+    transform: scale(1.00);
+    border-radius: 0;
   }
 }

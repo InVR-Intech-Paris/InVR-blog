@@ -5,7 +5,7 @@
 {{ $emailPlaceholder := "johndoe@invr.fr" }}                                       {{ if isset .Params "emailPlaceholder" }} {{ $emailPlaceholder = .Get "emailPlaceholder" }} {{ end }}
 {{ $msgPlaceholder := "Écrivez l'email que vous souhaitez nous adresser ici..." }} {{ if isset .Params "msgPlaceholder" }}   {{ $msgPlaceholder = .Get "msgPlaceholder" }}     {{ end }}
 
-{{ if .Site.Params.Abaddon.EnableContactForm | default false }}
+{{ if .Site.Params.Abaddon.EnableContactForm | default true }}
 <h3>{{ $title }}</h4>
 <form id="invr-contact-form"
   action="https://formspree.io/f/myyvndlq"
