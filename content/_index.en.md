@@ -63,7 +63,7 @@ description: "Infinitely creative solutions."
 
 {{< separator size=20 >}}
 
-{{< accordion vx='' >}}
+{{< accordion lang="en" >}}
 
 {{< separator size=4 unit="em" >}}
 
