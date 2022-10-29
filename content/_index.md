@@ -69,7 +69,7 @@ description: "Infinitely creative solutions."
 
 ---
 
-### Contact us
+### Contactez-nous
 
 {{< contactForm vx='' >}}
 
