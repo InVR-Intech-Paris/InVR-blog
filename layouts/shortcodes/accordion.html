@@ -1,5 +1,5 @@
 {{ $lang := .Site.Data.vocab.defaultValues.etc.language }} {{ if isset .Params "lang" }} {{ $lang = .Get "lang" }}                   {{ end }}
-{{ $qas  := .Site.Data.vocab.qas.fr.values }}                           {{ if eq $lang "en"}}         {{ $qas = .Site.Data.vocab.qas.en.values }} {{ end }}
+{{ $qas  := .Site.Data.vocab.qas.fr.values }}              {{ if eq $lang "en"}}         {{ $qas = .Site.Data.vocab.qas.en.values }} {{ end }}
 
 <div class="accordion">
   {{ range $qas }}
