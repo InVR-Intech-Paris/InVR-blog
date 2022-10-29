@@ -165,6 +165,7 @@ html {
   width: var(--w);
   filter: drop-shadow(5px 5px 0.75rem rgba(1, 0, 21, 0.2));
   transition: all 0.2s;
+  font-weight: bold;
 }
 
 .enroll-staff-btn a {
@@ -341,6 +342,7 @@ header.flex-col img {
   filter: drop-shadow(5px 5px 0.75rem rgba(1, 0, 21, 0.2));
   transition: all 0.2s;
   cursor: pointer;
+  font-weight: bold;
 }
 
 @media (min-width: 1024px) {

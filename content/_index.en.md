@@ -60,6 +60,6 @@ description: "Infinitely creative solutions."
 
 &nbsp;
 
-{{< contactForm emailTxt="Your email" msgTxt="Your message" submitTxt="Send" >}}
+{{< contactForm emailTxt="Your email" msgTxt="Your message" submitTxt="Send email" msgPlaceholder="Write the email you want to send us here..." >}}
 
 ---
