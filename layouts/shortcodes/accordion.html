@@ -1,9 +1,6 @@
 {{ $lang := "fr" }} {{ if isset .Params "lang" }} {{ $lang = .Get "lang" }} {{ end }}
 {{ $qas := .Site.Data.qas.fr.values }}
-
-{{ if eq $lang "en"}}
-    {{ $qas = .Site.Data.qas.en.values }}
-{{ end }}
+{{ if eq $lang "en"}} {{ $qas = .Site.Data.qas.en.values }} {{ end }}
 
 <div class="accordion">
     {{ range $qas }}
