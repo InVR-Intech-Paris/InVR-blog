@@ -1,26 +1,3 @@
-/* Button 'Join staff' */
-.enroll-staff-btn a,
-.md\:flex>a:first-of-type {
-  text-align: center;
-  background-color: #339DFF;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  border-radius: 15px;
-  --w: calc(2em * 4.9);
-  width: var(--w);
-  filter: drop-shadow(5px 5px 0.75rem rgba(1, 0, 21, 0.2));
-  transition: all .2s;
-}
-
-.enroll-staff-btn a:hover,
-.md\:flex>a:first-of-type:hover {
-  background-color: #FFFFFF;
-  color: #339DFF;
-  filter: drop-shadow(0px 0px 0.75rem rgba(177, 173, 255, 0.2));
-  transform: scale(1.1);
-  font-weight: 600;
-}
-
 .enroll-staff-btn a {
   display: block;
   color: #FFF;
@@ -29,18 +6,41 @@
   width: calc(var(--w) * 1.2);
 }
 
-.enroll-staff-btn a:hover {
-  border-radius: 15px;
-}
-/* ! Button 'Join staff' */
+.enroll-staff-btn a,
+.md\:flex > a:first-of-type {
+  --w: calc(2em * 4.9);
 
-/* Cheating on sections props */
+  text-align: center;
+  background-color: #339DFF;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 15px;
+  width: var(--w);
+  filter: drop-shadow(5px 5px 0.75rem rgba(1, 0, 21, 0.2));
+  transition: all 0.2s;
+}
+
+.enroll-staff-btn a:hover,
+.md\:flex > a:first-of-type:hover {
+  background-color: #FFFFFF;
+  color: #339DFF;
+  filter: drop-shadow(0px 0px 0.75rem rgba(177, 173, 255, 0.2));
+  transform: scale(1.1);
+  font-weight: 600;
+}
+
+.invr-section-column img {
+  border-radius: 15px;
+  filter: drop-shadow(5px 5px 0.75rem rgba(1, 0, 21, 0.2));
+  transition-duration: 0.7s;
+}
+
 header.flex-col img {
   width: 80%;
   height: 80%;
 }
 
-#main-content>article>section>table {
+#main-content > article > section > table {
   font-size: 1.6em;
 }
 
@@ -50,14 +50,6 @@ header.flex-col img {
 
 .prose {
   max-width: 125ch;
-}
-/* !Cheating on sections props */
-
-/* Section impl */
-.invr-section-column img {
-  border-radius: 15px;
-  filter: drop-shadow(5px 5px 0.75rem rgba(1, 0, 21, 0.2));
-  transition-duration: 0.7s;
 }
 
 .invr-section-row {
@@ -90,9 +82,7 @@ header.flex-col img {
   height: 100%;
   margin: 0 auto;
 }
-/* !Section impl */
 
-/* Accordion impl */
 .accordion {
   width: 90%;
   max-width: 1000px;
@@ -138,7 +128,7 @@ header.flex-col img {
 .accordion-item-body-content {
   padding: 1rem;
   min-height: 4.5rem;
-  line-height: 1.0rem;
+  line-height: 1rem;
   border-top: 1px solid;
   border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
 }
@@ -147,12 +137,14 @@ header.flex-col img {
   color: #27272A;
   margin-bottom: 1.2em;
 }
-/* !Accordion impl */
 
-/* Media */
-  @media (min-width: 1024px) {
+@media (min-width: 1024px) {
   .invr-section-column img:hover {
-    filter: drop-shadow(0 0 0 rgba(0, 0, 0, .0));
+    filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0));
+  }
+
+  .enroll-staff-btn a:hover {
+    border-radius: 15px;
   }
 
   .invr-section-column {
@@ -201,4 +193,3 @@ header.flex-col img {
     order: 1;
   }
 }
-/* ! Media */
