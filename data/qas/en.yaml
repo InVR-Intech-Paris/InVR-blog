@@ -1,0 +1,33 @@
+values:
+    - question: Netflix, what is it?
+      answer: |
+        Netflix is a streaming service that offers a wide selection of award-winning series, movies, anime documentaries and other award-winning programming on thousands of Internet-connected devices.
+        Watch whatever you want, whenever you want, commercial-free and at a very attractive monthly rate.
+        Attractive monthly fee. Discover new movies and series every week, there's something for everyone!
+
+    - question: How much does Netflix cost?
+      answer: |
+        Watch Netflix on your smartphone, tablet, Smart TV, computer or streaming device, all for a flat monthly fee.
+        Plans range from $8.99 to $17.99 per month. No contract or additional fees.
+
+    - question: Where can I watch Netflix?
+      answer: |
+        Netflix is where you want it, when you want it. Sign in to your account to watch Netflix online at netflix.com from your computer or any device connected to the Internet with the the Netflix app, such as Smart TVs, smartphones, tablets, streaming players, and game consoles.
+        You can also download your favorite series with the iOS, Android or Windows 10 app.
+        Download titles to watch on your mobile device, even without an internet connection.
+        Take Netflix with you wherever you go.
+
+    - question: How do I cancel my Netflix subscription?
+      answer: |
+        Netflix offers great flexibility. No complicated contracts. No commitment.
+        Two clicks are all it takes to cancel your account online.
+        No cancellation fees: open or close your account at any time.
+
+    - question: What can I watch on Netflix?
+      answer: |
+        Netflix offers an extensive catalog including feature films, documentaries, series, anime and award-winning Netflix originals.
+        Watch Netflix whenever you want you want.
+
+    - question: Is Netflix kid-friendly?
+      answer: |
+        TÂTE-MOI LES BOULES

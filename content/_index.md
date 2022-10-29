@@ -43,7 +43,7 @@ description: "Infinitely creative solutions."
 
 ### Foire aux questions
 
-{{< accordion >}}
+{{< accordion vx='' >}}
 
 &nbsp;
 

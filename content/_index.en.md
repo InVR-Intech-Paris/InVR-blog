@@ -43,7 +43,7 @@ description: "Infinitely creative solutions."
 
 ### Q&A
 
-{{< accordionEn >}}
+{{< accordion lang="en" >}}
 
 &nbsp;
 
