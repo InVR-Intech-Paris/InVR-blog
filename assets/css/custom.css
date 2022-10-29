@@ -155,7 +155,7 @@ html {
 
 .enroll-staff-btn a,
 .md\:flex > a:first-of-type {
-  --w: calc(2em * 4.9);
+  --w: 11em;
 
   text-align: center;
   background-color: #339DFF;
@@ -164,8 +164,8 @@ html {
   border-radius: 15px;
   width: var(--w);
   filter: drop-shadow(5px 5px 0.75rem rgba(1, 0, 21, 0.2));
-  transition: all 0.2s;
   font-weight: bold;
+  transition: all 0.2s;
 }
 
 .big-enroll-staff-btn a {
