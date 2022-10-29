@@ -1,4 +1,5 @@
-{{ $size := 15 }}   {{ if isset .Params "size" }} {{ $size = .Get "size" }} {{ end }}
-{{ $unit := "px" }} {{ if isset .Params "unit" }} {{ $unit = .Get "unit" }} {{ end }}
+{{ $defaultValues := .Site.Data.etc.defaultValues.separator }}
+{{ $size          := $defaultValues.size }} {{ if isset .Params "size" }} {{ $size = .Get "size" }} {{ end }}
+{{ $unit          := $defaultValues.unit }} {{ if isset .Params "unit" }} {{ $unit = .Get "unit" }} {{ end }}
 
 <hr style="width:0%;margin:0;padding:0;margin-top:{{ $size }}{{ $unit }};"></hr>

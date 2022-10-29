@@ -1,0 +1,5 @@
+emailTxt = "Votre email"
+msgTxt = "Votre message"
+submitTxt = "Envoyer l'email"
+emailPlaceholder = "johndoe@invr.fr"
+msgPlaceholder = "Écrivez l'email que vous souhaitez nous adresser ici..."

@@ -1,8 +1,9 @@
-{{ $emailTxt := "Votre email" }}                                                   {{ if isset .Params "emailTxt" }}         {{ $emailTxt = .Get "emailTxt" }}                 {{ end }}
-{{ $msgTxt := "Votre message" }}                                                   {{ if isset .Params "msgTxt" }}           {{ $msgTxt = .Get "msgTxt" }}                     {{ end }}
-{{ $submitTxt := "Envoyer l'email" }}                                              {{ if isset .Params "submitTxt" }}        {{ $submitTxt = .Get "submitTxt" }}               {{ end }}
-{{ $emailPlaceholder := "johndoe@invr.fr" }}                                       {{ if isset .Params "emailPlaceholder" }} {{ $emailPlaceholder = .Get "emailPlaceholder" }} {{ end }}
-{{ $msgPlaceholder := "Écrivez l'email que vous souhaitez nous adresser ici..." }} {{ if isset .Params "msgPlaceholder" }}   {{ $msgPlaceholder = .Get "msgPlaceholder" }}     {{ end }}
+{{ $defaultValues    := .Site.Data.vocab.defaultValues.contactForm }}
+{{ $emailTxt         := $defaultValues.emailTxt }}         {{ if isset .Params "emailTxt" }}         {{ $emailTxt = .Get "emailTxt" }}                 {{ end }}
+{{ $msgTxt           := $defaultValues.msgTxt }}           {{ if isset .Params "msgTxt" }}           {{ $msgTxt = .Get "msgTxt" }}                     {{ end }}
+{{ $submitTxt        := $defaultValues.submitTxt }}        {{ if isset .Params "submitTxt" }}        {{ $submitTxt = .Get "submitTxt" }}               {{ end }}
+{{ $emailPlaceholder := $defaultValues.emailPlaceholder }} {{ if isset .Params "emailPlaceholder" }} {{ $emailPlaceholder = .Get "emailPlaceholder" }} {{ end }}
+{{ $msgPlaceholder   := $defaultValues.msgPlaceholder }}   {{ if isset .Params "msgPlaceholder" }}   {{ $msgPlaceholder = .Get "msgPlaceholder" }}     {{ end }}
 
 {{ if .Site.Params.Abaddon.EnableContactForm | default true }}
 <form id="invr-contact-form"
