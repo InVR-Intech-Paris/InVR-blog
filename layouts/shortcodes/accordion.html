@@ -1,34 +1,37 @@
-{{ $lang := "fr" }} {{ if isset .Params "lang" }} {{ $lang = .Get "lang" }} {{ end }}
-{{ $qas := .Site.Data.qas.fr.values }}
-{{ if eq $lang "en"}} {{ $qas = .Site.Data.qas.en.values }} {{ end }}
+{{ $lang := "fr" }}                    {{ if isset .Params "lang" }} {{ $lang = .Get "lang" }}             {{ end }}
+{{ $qas := .Site.Data.qas.fr.values }} {{ if eq $lang "en"}}         {{ $qas = .Site.Data.qas.en.values }} {{ end }}
 
 <div class="accordion">
-    {{ range $qas }}
-        <div class="accordion-item">
-            <div class="accordion-item-header">
-                <h4>{{ .question }}</h4>
-            </div>
-            <div class="accordion-item-body">
-                <div class="accordion-item-body-content">
-                    <p>{{ delimit (.answer) "</p><p>" }}</p>
-                </div>
-            </div>
-        </div>
-    {{ end }}
+  {{ range $qas }}
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      <h4>{{ .question }}</h4>
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        <p>{{ delimit (.answer) "</p>
+        <p>" }}</p>
+      </div>
+    </div>
+  </div>
+  {{ end }}
 </div>
 
 <script>
-    const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+  const accordionItemHeaders = document.querySelectorAll(
+    ".accordion-item-header"
+  );
 
-    accordionItemHeaders.forEach(accordionItemHeader => {
-        accordionItemHeader.addEventListener("click", event => {
-            accordionItemHeader.classList.toggle("active");
-            const accordionItemBody = accordionItemHeader.nextElementSibling;
-            if (accordionItemHeader.classList.contains("active")) {
-                accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
-            } else {
-                accordionItemBody.style.maxHeight = 0;
-            }
-        });
+  accordionItemHeaders.forEach((accordionItemHeader) => {
+    accordionItemHeader.addEventListener("click", (event) => {
+      accordionItemHeader.classList.toggle("active");
+      const accordionItemBody = accordionItemHeader.nextElementSibling;
+      if (accordionItemHeader.classList.contains("active")) {
+        accordionItemBody.style.maxHeight =
+          accordionItemBody.scrollHeight + "px";
+      } else {
+        accordionItemBody.style.maxHeight = 0;
+      }
     });
+  });
 </script>
