@@ -60,6 +60,6 @@ description: "Infinitely creative solutions."
 
 &nbsp;
 
-{{< contactForm default='' >}}
+{{< contactForm vx='' >}}
 
 ---
