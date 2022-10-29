@@ -2,8 +2,12 @@
 {{ $align := "left" }} {{ if isset .Params "align" }} {{ $align = .Get "align" }} {{ end }}
 {{ $class := "" }}     {{ if isset .Params "class" }} {{ $class = .Get "class" }} {{ end }}
 {{ $alt := "" }}       {{ if isset .Params "alt" }}   {{ $alt = .Get "alt" }}     {{ end }}
-{{ $src := "#" }}      {{ if isset .Params "src" }}   {{ $src = .Get "src" }}     {{ end }}
+{{ $href := "" }}      {{ if isset .Params "href" }}  {{ $href = .Get "href" }}   {{ end }}
 
 <div align='{{ $align }}' class='{{ $class }}'>
+    {{ if (not (eq $href "")) }}
+    <a href="{{ $href }}"><img src='{{ $src }}' alt='{{ $alt }}'></a>
+    {{ else }}
     <img src='{{ $src }}' alt='{{ $alt }}'>
+    {{ end }}
 </div>

@@ -3,7 +3,7 @@ title: "In'VR"
 description: "Infinitely creative solutions."
 ---
 
-{{< ctaJoinStaff align="center" class="enroll-staff-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSclmWkxxPw0YzV88jpH0Ro0KMTrTV66EtN43z_jNrXmnULeCw/viewform" label="Join our staff!" >}}
+{{< separator size=25 >}}
 
 ---
 
@@ -41,24 +41,35 @@ description: "Infinitely creative solutions."
 
 &nbsp;
 
-### Q&A
+---
 
-{{< accordion lang="en" >}}
+### Our action
 
-&nbsp;
+{{< img src="https://via.placeholder.com/2048x768" align="center" alt="invr-staff-photography" class="invr-action-photography" href="https://docs.google.com/forms/d/e/1FAIpQLSclmWkxxPw0YzV88jpH0Ro0KMTrTV66EtN43z_jNrXmnULeCw/viewform" >}}
 
-### Lorem ipsum dolor sit amet, consectetur adipiscing elit
-
-&nbsp;
 | 3 | 14 | 30000 $ |
 | :-: | :-: | :-: |
 | Lorem | Ipsum dolor sit amet | Dolor sit amet et coergu cum |
 
-### Join us!
+{{< ctaJoinStaff align="center" class="big-enroll-staff-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSclmWkxxPw0YzV88jpH0Ro0KMTrTV66EtN43z_jNrXmnULeCw/viewform" label="Rejoignez le staff !" >}}
 
-{{< ctaJoinStaff align="center" class="enroll-staff-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSclmWkxxPw0YzV88jpH0Ro0KMTrTV66EtN43z_jNrXmnULeCw/viewform" label="Join our staff!" >}}
+{{< separator size=5 unit="em" >}}
 
-&nbsp;
+---
+
+{{< separator size=4 unit="em" >}}
+
+### Q&A
+
+{{< separator size=20 >}}
+
+{{< accordion vx='' >}}
+
+{{< separator size=4 unit="em" >}}
+
+---
+
+### Contact us
 
 {{< contactForm emailTxt="Your email" msgTxt="Your message" submitTxt="Send email" msgPlaceholder="Write the email you want to send us here..." >}}
 
