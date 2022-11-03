@@ -1,0 +1,26 @@
+# config/_default/menus.en.toml
+
+[[main]]
+  name = "Pizza"
+  url = "https://docs.google.com/forms/d/e/1FAIpQLSclmWkxxPw0YzV88jpH0Ro0KMTrTV66EtN43z_jNrXmnULeCw/viewform"
+  weight = 5
+
+[[main]]
+  identifier = "pasta"
+  name = "Pasta Parent"
+  pageRef = "posts"
+  weight = 10
+
+[[main]]
+  name = "Mario son"
+  parent = "pasta"
+  weight = 1
+
+[[main]]
+  name = "Bibite"
+  url = "mailto:contact@invr.fr"
+  weight = 10
+
+[[footer]]
+  name = "Privacy"
+  url = "#privacy"                  # * ... ToDo
