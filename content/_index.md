@@ -63,14 +63,10 @@ description: "Infinitely creative solutions."
 
 {{< separator size=2 >}}
 
-{{< qaAccordion vx='' >}}
+{{< qaAccordion lang="fr" >}}
 
 {{< separator size=4 unit="em" >}}
 
 ---
 
-### Contactez-nous
-
-{{< contactForm vx='' >}}
-
----
+{{< contactForm title="Contactez-nous" >}}

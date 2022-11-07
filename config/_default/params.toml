@@ -16,10 +16,12 @@
 # * ... CUSTOM
 #================
 
+Abaddon.EnableContactForm       =   false
+
 #-------------------
 # * ... Theming
 #-------------------
-colorScheme                     =   "congo"         # ToDo - lolilol !
+colorScheme                     =   "congo"         # [OK]
 defaultAppearance               =   "dark"          # [OK]
 
 #-------------------

@@ -69,8 +69,4 @@ description: "Infinitely creative solutions."
 
 ---
 
-### Contact us
-
-{{< contactForm emailTxt="Your email" msgTxt="Your message" submitTxt="Send email" msgPlaceholder="Write the email you want to send us here..." >}}
-
----
+{{< contactForm title="Contact us" emailTxt="Your email" msgTxt="Your message" submitTxt="Send email" msgPlaceholder="Write the email you want to send us here..." >}}

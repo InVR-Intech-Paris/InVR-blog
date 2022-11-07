@@ -4,8 +4,10 @@
 {{ $submitTxt        := $defaultValues.submitTxt }}        {{ if isset .Params "submitTxt" }}        {{ $submitTxt = .Get "submitTxt" }}               {{ end }}
 {{ $emailPlaceholder := $defaultValues.emailPlaceholder }} {{ if isset .Params "emailPlaceholder" }} {{ $emailPlaceholder = .Get "emailPlaceholder" }} {{ end }}
 {{ $msgPlaceholder   := $defaultValues.msgPlaceholder }}   {{ if isset .Params "msgPlaceholder" }}   {{ $msgPlaceholder = .Get "msgPlaceholder" }}     {{ end }}
+{{ $title            := $defaultValues.title }}            {{ if isset .Params "title" }}            {{ $title = .Get "title" }}                       {{ end }}
 
 {{ if .Site.Params.Abaddon.EnableContactForm | default true }}
+<h3>{{ $title }}</h3>
 <form id="invr-contact-form"
   action="https://formspree.io/f/myyvndlq"
   method="POST"
@@ -23,4 +25,5 @@
     {{ $submitTxt }}
   </button>
 </form>
+<hr>
 {{ end }}
