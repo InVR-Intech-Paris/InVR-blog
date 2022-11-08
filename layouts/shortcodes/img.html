@@ -8,8 +8,8 @@
 
 <div align='{{ $align }}' class='{{ $class }}'>
     {{ if (not (eq $href $isUnset)) }}
-    <a href="{{ $href }}"><img src='{{ $src }}' alt='{{ $alt }}'></a>
+    <a href="{{ $href }}"><img src='{{ $src }}' alt='{{ $alt }}'/></a>
     {{ else }}
-    <img src='{{ $src }}' alt='{{ $alt }}'>
+    <img src='{{ $src }}' alt='{{ $alt }}'/>
     {{ end }}
 </div>
