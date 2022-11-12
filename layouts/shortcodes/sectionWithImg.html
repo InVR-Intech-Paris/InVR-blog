@@ -8,7 +8,7 @@
 {{ $label         := $defaultValues.label }}    {{ if isset .Params "ctaLabel" }}            {{ $label = .Get "ctaLabel" }}               {{ end }}
 {{ $pos           := $defaultValues.pos }}      {{ if isset .Params "pos" }}                 {{ $pos = .Get "pos" }}                      {{ end }}
 
-{{ if (eq $pos "imgOnLeft") }}
+{{ if (eq $pos "imgOnRight") }}
   <div class='invr-section-wrapper'>
     <div class='invr-section-row'>
       <div class='invr-section-column invr-section-element-b'>
